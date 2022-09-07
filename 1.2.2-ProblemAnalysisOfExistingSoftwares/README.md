@@ -12,30 +12,34 @@
            </tr>
      </thead>
      <tr>
-           <td>вологість навколишнього середовища</td>
-           <td>-</td>
-           <td>-</td>
-           <td>-</td>
-           <td>Неактуально</td>
+           <td>Продукт / пошукові фази</td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
      </tr>
      <tr>
-           <td>психологічно-емоціональна стабільність</td>
-           <td>-</td>
-           <td>-</td>
-           <td>Важливо</td>
-           <td>-</td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td>Free</td>
+           <td></td>
+           <td></td>
      </tr>
      <tr>
-           <td>отримання даних</td>
-           <td>Доступно</td>
-           <td>-</td>
-           <td>-</td>
-           <td>-</td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td>Free</td>
+           <td></td>
+           <td></td>
      </tr>
      <tr>
-           <td>зацікавленість скульптурою</td>
-           <td>-</td>
-           <td>Незрозуміло</td>
-           <td>-</td>
-           <td>-</td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td>Free</td>
+           <td></td>
+           <td></td>
      </tr>

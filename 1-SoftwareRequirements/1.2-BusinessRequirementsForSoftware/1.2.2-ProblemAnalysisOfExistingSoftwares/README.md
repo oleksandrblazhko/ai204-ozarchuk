@@ -32,7 +32,7 @@
            <td></td>
            <td>3</td>
            <td></td>
-           <td>Free</td>
+           <td>Shareware</td>
            <td></td>
      </tr>
      <tr>

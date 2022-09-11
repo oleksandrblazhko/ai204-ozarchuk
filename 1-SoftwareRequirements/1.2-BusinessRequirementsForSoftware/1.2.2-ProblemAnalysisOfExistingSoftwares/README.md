@@ -13,7 +13,7 @@
      </thead>
      <tr>
            <td>Продукт / пошукові фази</td>
-           <td></td>
+           <td>Humidity software</td>
            <td></td>
            <td></td>
            <td></td>

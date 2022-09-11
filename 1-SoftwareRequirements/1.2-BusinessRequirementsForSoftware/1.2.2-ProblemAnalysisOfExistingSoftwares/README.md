@@ -20,7 +20,7 @@
            <td></td>
      </tr>
      <tr>
-           <td>Humidity controller https://bt.rozetka.com.ua/ua/222892081/p222892081/</td>
+           <td>SensMax https://sensmax.eu/software/online-temperature-and-humidity-monitoring-software/</td>
            <td>4</td>
            <td></td>
            <td></td>

@@ -15,7 +15,7 @@
            <td>Продукт / пошукові фази</td>
            <td>Humidity software</td>
            <td></td>
-           <td></td>
+           <td>Data acquisition software</td>
            <td></td>
            <td></td>
      </tr>
@@ -36,7 +36,7 @@
            <td></td>
      </tr>
      <tr>
-           <td>Telegram https://web.telegram.org/z/</td>
+           <td>Devesoft https://dewesoft.com/products/daq-software</td>
            <td></td>
            <td></td>
            <td>4</td>

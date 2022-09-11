@@ -14,7 +14,7 @@
      <tr>
            <td>Продукт / пошукові фази</td>
            <td>Humidity software</td>
-           <td></td>
+           <td>Software for emotional stability</td>
            <td>Data acquisition software</td>
            <td></td>
            <td></td>

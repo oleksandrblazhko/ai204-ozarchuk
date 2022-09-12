@@ -1,4 +1,4 @@
-Feature: Action
-         In order to get indicator changes, create moodboards, monitor humidity, ask technical questions, use search queries
+Feature: Monitor the humidity
+         In order to get indicator changes, monitor humidity, ask technical questions, use search queries
          As an user
-         I want to register/login, see and receive readings, ask and receive technical questions, create moodboards, monitor humidity, receive data and messages, use search queries
+         I want to register/login, ask and receive technical questions, record humidity indicators, receive data and messages, use search queries

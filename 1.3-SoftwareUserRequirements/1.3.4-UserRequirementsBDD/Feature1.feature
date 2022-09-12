@@ -1,4 +1,4 @@
-Feature: Registration
-         In order to register
+Feature: Authorize the user
+         In order to Sign up
          As an unauthorized user
-         I want to fill in all required fields (password, e-mail, etc.), connect to Google/Telegram, view the humidity level, new articles, return to the main page
+         I want to fill in all mandatory fields (email, password, etc.), connect to Google+/Telegram, view the humidity level, read new articles, then redirect to Home page

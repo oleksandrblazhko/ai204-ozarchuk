@@ -12,3 +12,7 @@
 |User|Patronymic|По батькові користувача|Текст|Довжина символів < 50|
 |User|E-mail|Пошта, на яку зареєстрований користувач|Текст|Довжина символів < 30|
 |User|Phone number|Номер телефону, на який зареєстрований користувач|Текст|Довжина символів < 20|
+|Laboratory equipment|Changes in indicators|Показники індикаторів обладнання|Число|Значення > 0|
+|Equipment indicators|Air humidity|Показник вологості повітря|Число|Значення > 0|
+|Equipment indicators|Air temperature|Показник температури повітря|Число|Значення > 0|
+|Equipment indicators|Pressure|Показник тиску|Число|Значення > 0|

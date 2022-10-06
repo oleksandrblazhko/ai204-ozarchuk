@@ -16,3 +16,6 @@
 |Equipment indicators|Air humidity|Показник вологості повітря|Число|Значення > 0|
 |Equipment indicators|Air temperature|Показник температури повітря|Число|Значення > 0|
 |Equipment indicators|Pressure|Показник тиску|Число|Значення > 0|
+|Air humidity|Water vapor|Відсоток водяної пари|Число|Значення > 0|
+|Searching system|Online request|Запит, який надсилають або отримують|Текст|Довжина символів < 200|
+|Searching system|DataBase|База даних, в якій зберігається інформація|Текст|Довжина символів < 200|

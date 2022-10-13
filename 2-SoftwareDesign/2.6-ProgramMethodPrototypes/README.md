@@ -2,7 +2,7 @@
 |FR|Опис вимоги|Назва класу|Назва методу класу|
 |:-|:-|:-:|:-:|
 |FR1.1|ПП надсилає зміни показників обладнання|Laboratory equipment|send : Equipment indicators|
-|FR1.2|Користувач отримує зміни показників обладнання|Equipment indicators||
+|FR1.2|Користувач отримує зміни показників обладнання|Equipment indicators|receiveIndicators()|
 |FR1.3|Користувач регулює вологість навколишнього середовища|Air humidity|formAirHumidity()|
 |FR2.1|Користувач задає технічні запитання через Online-повідомлення|Online message|send()|
 |FR2.2|Робітник отримує технічні запитання через Online-повідомлення|Online message|receive()|

@@ -1,1 +1,16 @@
+@startuml
+title Conditional - Activity Diagram 
+
+start
+:The worker makes a request for information;
+:The program searches for the necessary information;
+if (Found the required information?) then (Yes)
+  :The necessary information was found!;
+else (No)
+  :Required information not found!;
+endif
+stop
+
+@enduml
+
 

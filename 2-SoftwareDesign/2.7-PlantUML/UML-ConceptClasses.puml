@@ -1,1 +1,10 @@
+@startuml
+title Classes Diagram
 
+Class Employee
+Class User
+Class Air_Humidity
+
+User <|-- Employee
+User"1" -up-> "+"Air_Humidity : regulate
+@enduml

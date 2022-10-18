@@ -1,1 +1,37 @@
+@startuml
+title Relation Schema
+hide circle
+entity "Employee" as employee {
+  (PK)id_employee
+  --
+  surname
+  name
+  patronymic
+  email
+  phone_number
+  work_experience
+  salary
+  (FK)id_airHum
+}
 
+entity "User" as user {
+  (PK)id_user
+  --
+  surname
+  name
+  patronymic
+  email
+  phone_number
+  (FK)id_airHum
+}
+
+entity "Air_humidity" as airHum {
+  (PK)id_airHum
+  --
+  water_vapon
+}
+
+airHum --{ user
+airHum --{ employee
+
+@enduml

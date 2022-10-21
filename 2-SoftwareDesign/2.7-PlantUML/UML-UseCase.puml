@@ -1,0 +1,28 @@
+@startuml
+title Usecase for Information system
+left to right direction
+skinparam packageStyle rect
+actor Employee
+actor Sculptor_consumer
+actor Office_worker
+actor User
+rectangle Software {
+  User -- (Authorization)
+  User <|-- Sculptor_consumer
+  User <|-- Employee
+  Employee <|-- Office_worker
+  
+  Employee -- (Receive changes in indicators)
+  Office_worker -- (View online message/electronic documentation)
+  Sculptor_consumer -- (Monitor the humidity)
+  Sculptor_consumer -- (Record changes in indicators)
+
+  
+  (Monitor the humidity) ..> (Authorization) : <<include>>
+  (Record changes in indicators) ..> (Authorization) : <<include>>
+  (Receive changes in indicators) ..> (Authorization) : <<include>>
+  
+  
+  (Receive changes in indicators) <. (View online message/electronic documentation) : <<extend>>
+}
+@enduml

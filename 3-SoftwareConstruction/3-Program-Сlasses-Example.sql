@@ -28,7 +28,7 @@ CREATE TABLE Employee ( -- робітник
 	id_officeWorker INT, -- айді робітника команди
   	/* Перевизначення методу-процедури класу User */
     	OVERRIDING MEMBER PROCEDURE display 
-)
+);
 /
 
 /* Створення типу для зберігання списку співробітників - "Колекція екземплярів об`єктів класу Employee */
@@ -45,11 +45,31 @@ CREATE TABLE Office_worker ( -- робітник команди
 );
 /
 
-
+/* Створення об'єктного типу (клас) Air_humidity */
 CREATE OR REPLACE TYPE Air_humidity AS OBJECT ( -- вологість повітря
-	id_airHum INT PRIMARY KEY, -- айді
-	water_vapon NUMBER(20) -- водяна пара
+	id_airHum INT, -- айді
+	water_vapon NUMBER(20), -- водяна пара
+	/* конструктор екземплярів об'єктів класів.
+       	Вхідні параметри:
+	   1) p_water_vapon - вміст водяної пари
+	   умова 1) якщо в таблиці Air_humidity вже існує вказаний вміст,
+	   створюється екземпляр класу на основі даних таблиці,
+	   інакше в таблиці Air_humidity створюється новий рядок з одночасним
+	   створюється екземпляр класу 
+	 Вихідний параметр - екземпляр обʼєкту класу */
+    	CONSTRUCTOR FUNCTION Air_humidity(p_water_vapon NUMBER)
+        	RETURN SELF AS RESULT,
+		/* Процедура зміни значення атрибутів */
+		MEMBER PROCEDURE set_water_vapon(p_id_airHum NUMBER, p_water_vapon NUMBER),
+    		/* Функції отримання значень атрибутів */
+		MEMBER FUNCTION get_id_airHum RETURN INT,
+		MEMBER FUNCTION get_water_vapon RETURN NUMBER,
+    	/* Процедура виводу на екран значень атрибутів */
+    	MEMBER PROCEDURE display
 );
+/
+
+-- show errors;
 
 
 /* Створення об'єктного типу (класу) Equipment_indicators */
@@ -78,13 +98,13 @@ CREATE OR REPLACE TYPE Laboratory_equipment AS OBJECT ( -- лабораторн�
 	   інакше в таблиці Laboratory_equipment створюється новий рядок з одночасним
 	   створюється екземпляр класу 
 	 Вихідний параметр - екземпляр обєкту класу */
-    	CONSTRUCTOR FUNCTION Laboratory_equipment(p_changes_in_indicators VARCHAR)
+    	CONSTRUCTOR FUNCTION Laboratory_equipment(p_changes_in_indicators NUMBER)
         	RETURN SELF AS RESULT,
 		/* Процедура зміни значення атрибутів */
-		MEMBER PROCEDURE set_changes_in_indicators(p_id_labEquip NUMBER, p_changes_in_indicators VARCHAR),
+		MEMBER PROCEDURE set_changes_in_indicators(p_id_labEquip NUMBER, p_changes_in_indicators NUMBER),
     		/* Функції отримання значень атрибутів */
-		MEMBER FUNCTION get_id_labEquip RETURN NUMBER,
-		MEMBER FUNCTION get_changes_in_indicators RETURN VARCHAR,
+		MEMBER FUNCTION get_id_labEquip RETURN INT,
+		MEMBER FUNCTION get_changes_in_indicators RETURN NUMBER,
 	/* Процедура виводу на екран значень атрибутів */
     	MEMBER PROCEDURE display
 );

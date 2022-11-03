@@ -46,6 +46,7 @@ CREATE TABLE Office_worker ( -- робітник команди
 /
 
 /* Створення об'єктного типу (клас) Air_humidity */
+-- DROP TYPE Air_humidity FORCE;
 CREATE OR REPLACE TYPE Air_humidity AS OBJECT ( -- вологість повітря
 	id_airHum INT, -- айді
 	water_vapon NUMBER(20), -- водяна пара
